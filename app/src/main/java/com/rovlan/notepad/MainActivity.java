@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                File f = null ;// new File(getFilesDir(), "input.txt");
+                File f = new File(getFilesDir(), "input.txt");
                 try {
                     Log.d(TAG, "File to load: " + f.getAbsolutePath());
                 }catch(NullPointerException e){
